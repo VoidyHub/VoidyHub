@@ -1,0 +1,91 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Voidy", "BloodTheme")
+
+-- FARM SCRIPTS TAB
+local FarmTab = Window:NewTab("Farm-Script")
+local FarmSection = FarmTab:NewSection("Main Scripts")
+
+FarmSection:NewButton("Redz", "Execute Redz script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
+FarmSection:NewButton("Relz (get key)", "Execute Relz script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/farghii/relzhub/refs/heads/main/v2.bloxfruits.lua"))()
+end)
+
+FarmSection:NewButton("Xeter", "Execute Xeter script", function()
+    getgenv().Version = "V2"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+end)
+
+FarmSection:NewButton("Quantum", "Execute Quantum script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
+end)
+
+FarmSection:NewButton("Speed", "Execute Speed script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+FarmSection:NewButton("Hiru", "Execute Hiru script (Pirates)", function()
+    getgenv().Team = "Pirates"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/Source/main/HiruHub.lua"))()
+end)
+
+FarmSection:NewButton("Xero", "Execute Xero script (Marines)", function()
+    getgenv().Team = "Marines"
+    getgenv().Hide_Menu = false
+    getgenv().Auto_Execute = false
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+end)
+
+FarmSection:NewButton("Cocka Hub (get key)", "Execute Cocka script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua"))()
+end)
+
+-- HOP SCRIPT TAB
+local HopTab = Window:NewTab("Hop-Script")
+local HopSection = HopTab:NewSection("Hop Scripts")
+
+HopSection:NewButton("Min-Hop", "Execute Min-Hop script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopFull"))()
+end)
+
+HopSection:NewButton("Zush-Hop", "Execute Zush-Hop script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/stuckez999/main/refs/heads/main/zushhubpro.txt"))()
+end)
+
+HopSection:NewButton("Zis-Hop", "Execute Zis-Hop script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRobloxHop"))()
+end)
+
+HopSection:NewButton("Teddy", "Execute Teddy script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
+end)
+
+-- CAMPSITE TAB
+local CampTab = Window:NewTab("Campsites-Script")
+local CampSection = CampTab:NewSection("Campsite Scripts")
+
+CampSection:NewButton("Tboy", "Execute Tboy script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TBoyRoblox727/TBoyRobloxYTB/refs/heads/main/AllScriptBF.txt"))()
+end)
+
+CampSection:NewButton("SoiRoblox", "Execute SoiRoblox script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Soirobloxgm/Soirobloxv3/refs/heads/main/AllscriptTonghop.lua"))()
+end)
+
+CampSection:NewButton("TuanAnhs", "Execute TuanAnhs script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/TuanAnhIOSNew/refs/heads/main/TuanAnhIOS-TongHop.Lua"))()
+end)
+
+CampSection:NewButton("Huy-Sad", "Execute HuySad script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HuySad/Huy-Sad1/refs/heads/main/Scriptdemo.lua.txt"))()
+end)
+
+CampSection:NewButton("Huy-Mup", "Execute HuyMup script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy210/HuyMup/refs/heads/main/Scriptdemo.lua.txt"))()
+end)
+
+CampSection:NewButton("Voidy", "Execute Voidy script", function()
+    loadstring(game:HttpGet("https://pastefy.app/9QebLjR0/raw"))()
+end)
