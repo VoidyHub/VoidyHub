@@ -1,0 +1,107 @@
+-- Load Venyx UI
+local Venyx = loadstring(game:HttpGet("https://raw.githubusercontent.com/acaakaaka1/Venyx-UI/main/main.lua"))()
+local venyx = Venyx.new("Voidy Hub", 5013109572)
+
+-- UI Toggle (RightShift)
+local UIS = game:GetService("UserInputService")
+local gui = game.CoreGui:FindFirstChild("Venyx") or game.Players.LocalPlayer.PlayerGui:FindFirstChild("Venyx")
+local isVisible = true
+
+UIS.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.RightShift then
+        isVisible = not isVisible
+        if gui then gui.Enabled = isVisible end
+    end
+end)
+
+-- FARM SCRIPTS TAB
+local farmPage = venyx:addPage("Farm Scripts", 5012544693)
+local farmSection = farmPage:addSection("Main Scripts")
+
+farmSection:addButton("Redz", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
+farmSection:addButton("Relz (get key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/farghii/relzhub/refs/heads/main/v2.bloxfruits.lua"))()
+end)
+
+farmSection:addButton("Xeter", function()
+    getgenv().Version = "V2"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+end)
+
+farmSection:addButton("Quantum", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
+end)
+
+farmSection:addButton("Speed", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+farmSection:addButton("Hiru", function()
+    getgenv().Team = "Pirates"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/Source/main/HiruHub.lua"))()
+end)
+
+farmSection:addButton("Xero", function()
+    getgenv().Team = "Marines"
+    getgenv().Hide_Menu = false
+    getgenv().Auto_Execute = false
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+end)
+
+farmSection:addButton("Cocka Hub (get key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua"))()
+end)
+
+-- HOP SCRIPT TAB
+local hopPage = venyx:addPage("Hop Scripts", 5012544693)
+local hopSection = hopPage:addSection("Hop Scripts")
+
+hopSection:addButton("Min-Hop", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopFull"))()
+end)
+
+hopSection:addButton("Zush-Hop", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/stuckez999/main/refs/heads/main/zushhubpro.txt"))()
+end)
+
+hopSection:addButton("Zis-Hop", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRobloxHop"))()
+end)
+
+hopSection:addButton("Teddy", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
+end)
+
+-- CAMPSITE TAB
+local campPage = venyx:addPage("Campsites", 5012544693)
+local campSection = campPage:addSection("Campsite Scripts")
+
+campSection:addButton("Tboy", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TBoyRoblox727/TBoyRobloxYTB/refs/heads/main/AllScriptBF.txt"))()
+end)
+
+campSection:addButton("SoiRoblox", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Soirobloxgm/Soirobloxv3/refs/heads/main/AllscriptTonghop.lua"))()
+end)
+
+campSection:addButton("TuanAnhs", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/TuanAnhIOSNew/refs/heads/main/TuanAnhIOS-TongHop.Lua"))()
+end)
+
+campSection:addButton("Huy-Sad", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HuySad/Huy-Sad1/refs/heads/main/Scriptdemo.lua.txt"))()
+end)
+
+campSection:addButton("Huy-Mup", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy210/HuyMup/refs/heads/main/Scriptdemo.lua.txt"))()
+end)
+
+campSection:addButton("Voidy", function()
+    loadstring(game:HttpGet("https://pastefy.app/9QebLjR0/raw"))()
+end)
+
+-- Load UI
+venyx:SelectPage(venyx.pages[1], true)
