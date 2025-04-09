@@ -1,0 +1,86 @@
+-- Load Delta UI Library
+local Delta = loadstring(game:HttpGet("https://raw.githubusercontent.com/DeltaHubX/DeltaLibrary/main/DeltaUI.lua"))()
+local Window = Delta:CreateWindow("Voidy Hub", Vector2.new(500, 350), Enum.KeyCode.RightShift)
+
+-- FARM SCRIPT TAB
+local FarmTab = Window:CreateTab("Farm Scripts")
+FarmTab:CreateButton("Redz", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
+FarmTab:CreateButton("Relz (get key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/farghii/relzhub/refs/heads/main/v2.bloxfruits.lua"))()
+end)
+
+FarmTab:CreateButton("Xeter", function()
+    getgenv().Version = "V2"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Loader/main/Xeter.lua"))()
+end)
+
+FarmTab:CreateButton("Quantum", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()
+end)
+
+FarmTab:CreateButton("Speed", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+end)
+
+FarmTab:CreateButton("Hiru", function()
+    getgenv().Team = "Pirates"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NGUYENVUDUY1/Source/main/HiruHub.lua"))()
+end)
+
+FarmTab:CreateButton("Xero", function()
+    getgenv().Team = "Marines"
+    getgenv().Hide_Menu = false
+    getgenv().Auto_Execute = false
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()
+end)
+
+FarmTab:CreateButton("Cocka Hub (get key)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua"))()
+end)
+
+-- HOP SCRIPT TAB
+local HopTab = Window:CreateTab("Hop Scripts")
+HopTab:CreateButton("Min-Hop", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Min/refs/heads/main/MinHopFull"))()
+end)
+
+HopTab:CreateButton("Zush-Hop", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/stuckez999/main/refs/heads/main/zushhubpro.txt"))()
+end)
+
+HopTab:CreateButton("Zis-Hop", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRobloxHop"))()
+end)
+
+HopTab:CreateButton("Teddy", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Teddyseetink/Haidepzai/refs/heads/main/TEDDYHUB-FREEMIUM"))()
+end)
+
+-- CAMPSITES SCRIPT TAB
+local CampTab = Window:CreateTab("Campsites")
+CampTab:CreateButton("Tboy", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TBoyRoblox727/TBoyRobloxYTB/refs/heads/main/AllScriptBF.txt"))()
+end)
+
+CampTab:CreateButton("SoiRoblox", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Soirobloxgm/Soirobloxv3/refs/heads/main/AllscriptTonghop.lua"))()
+end)
+
+CampTab:CreateButton("TuanAnhs", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhDzaiScript/TuanAnhIOSNew/refs/heads/main/TuanAnhIOS-TongHop.Lua"))()
+end)
+
+CampTab:CreateButton("Huy-Sad", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/HuySad/Huy-Sad1/refs/heads/main/Scriptdemo.lua.txt"))()
+end)
+
+CampTab:CreateButton("Huy-Mup", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/giahuy210/HuyMup/refs/heads/main/Scriptdemo.lua.txt"))()
+end)
+
+CampTab:CreateButton("Voidy", function()
+    loadstring(game:HttpGet("https://pastefy.app/9QebLjR0/raw"))()
+end)
