@@ -1,5 +1,21 @@
+-- Load Kavo UI Library
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Voidy", "BloodTheme")
+
+-- Toggle GUI using RightShift
+local UIS = game:GetService("UserInputService")
+local isVisible = true
+
+UIS.InputBegan:Connect(function(input, gameProcessed)
+    if input.KeyCode == Enum.KeyCode.RightShift then
+        isVisible = not isVisible
+        for _, gui in pairs(game.CoreGui:GetChildren()) do
+            if gui.Name == "KavoUI" then
+                gui.Enabled = isVisible
+            end
+        end
+    end
+end)
 
 -- FARM SCRIPTS TAB
 local FarmTab = Window:NewTab("Farm-Script")
