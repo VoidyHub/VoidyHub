@@ -1,0 +1,57 @@
+--[[
+  Bloxtrap Universal FPS Boost Script
+  Compatible with Delta, Fluxus, Hydrogen, Synapse X, and more
+  Boosts FPS, reduces lag, and improves smoothness
+--]]
+
+local function boostFPS()
+    -- Remove unnecessary visual effects
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("ParticleEmitter") or v:IsA("Trail") or v:IsA("Fire") or v:IsA("Smoke") or v:IsA("Sparkles") then
+            v:Destroy()
+        elseif v:IsA("Decal") then
+            v.Transparency = 1
+        end
+    end
+
+    -- Lower lighting quality
+    local lighting = game:GetService("Lighting")
+    lighting.GlobalShadows = false
+    lighting.FogEnd = math.huge
+    lighting.Brightness = 0
+    lighting.OutdoorAmbient = Color3.new(0.5, 0.5, 0.5)
+
+    -- Optimize terrain settings
+    if workspace:FindFirstChildOfClass("Terrain") then
+        local terrain = workspace:FindFirstChildOfClass("Terrain")
+        terrain.WaterWaveSize = 0
+        terrain.WaterWaveSpeed = 0
+        terrain.WaterReflectance = 0
+        terrain.WaterTransparency = 0
+    end
+
+    -- Mute background sounds
+    for _, s in pairs(workspace:GetDescendants()) do
+        if s:IsA("Sound") then
+            s.Volume = 0
+        end
+    end
+
+    -- Enable Streaming Mode if possible
+    if workspace:FindFirstChild("Terrain") then
+        workspace.StreamingEnabled = true
+        workspace.StreamingMinRadius = 64
+        workspace.StreamingTargetRadius = 128
+    end
+
+    -- Optional: remove mesh textures
+    for _, m in pairs(game:GetDescendants()) do
+        if m:IsA("MeshPart") then
+            m.TextureID = ""
+        end
+    end
+
+    print("Bloxtrap FPS Boost Activated - All Executors Compatible")
+end
+
+boostFPS()
